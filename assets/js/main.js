@@ -1,7 +1,7 @@
 // rolls a number between 1 - 20
 function getRandomD20() {
-    var critHit = new Audio('/assets/audio/mixkit-dagger-woosh-1487.mp3')
-    var critFail = new Audio('/assets/audio/mixkit-falling-empty-can-389.wav')
+    var critHit = new Audio('./assets/audio/mixkit-dagger-woosh-1487.mp3')
+    var critFail = new Audio('./assets/audio/mixkit-falling-empty-can-389.wav')
 
 
     num = Math.floor(Math.random() * 20) + 1;
