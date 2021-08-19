@@ -1,37 +1,66 @@
-@property --num {
-    syntax: '<integer>';
-    initial-value: 0;
-    inherits: false;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+* {
 
-.d20 {
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    
+}
+
+#d20 {
+    height: 100px;
+    width: 100px;
+    padding: 50px;
+    margin: 50px auto;
+    border: 5px solid #000;
+    font-size: 80px;
     user-select: none;
-    min-height: 100vh; // height of the browser viewport
+
+}
+
+#d20-output {
+    text-align: center;
+    font-weight: 700;
+}
+
+#d6 {
+    height: 100px;
+    width: 100px;
+    padding: 50px;
+    margin: 50px auto;
+    border: 5px solid #000;
+    font-size: 80px;
+    user-select: none;
+
+}
+
+#d6-output {
+    text-align: center;
+    font-weight: 700;
+}
+
+#d4 {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid red;
+    font-size: 80px;
+    margin: 50px auto;
+    user-select: none;
+}
+
+#d4-output {
     display: flex;
-    align-items: center;
-    transition: --num 1s;
-    counter-reset: num var(--num);
-
-}
-
-.d20:hover {
-    cursor: pointer;
-    --num: 20;
-}
-
-.d20::after {
-    content: counter(num);
-}
-
-.hex {
-    color: #000;
-    font-size: 200px;
+    justify-content: center;
+    padding-top: 75px;
+    min-height:100%;
+    min-width: 100%;
+    
+    font-weight: 700;
     
 
-}
-
-.d20 h2 {
-    color: greenyellow;
-    
+   
 }
